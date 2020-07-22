@@ -1,0 +1,39 @@
+@import "@styles/_var";
+
+.wrap {
+  position: relative;
+  padding-bottom: 208px;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 32px;
+}
+
+.note {
+  max-width: 252px;
+  margin-right: 165px;
+  margin-bottom: 20px;
+}
+
+.itemsWrap {
+  margin-top: 84px;
+}
+
+.item {
+  border-bottom: 1px solid $color-white;
+
+  &:first-child {
+    border-top: 1px solid $color-white;
+  }
+}
+
+.decor {
+  position: absolute;
+  top: -134px;
+  left: 112px;
+  z-index: -1;
+}

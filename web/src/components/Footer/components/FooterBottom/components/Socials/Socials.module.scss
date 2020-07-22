@@ -1,0 +1,12 @@
+@import "@styles/_var";
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  + .link {
+    margin-left: 27px;
+  }
+}

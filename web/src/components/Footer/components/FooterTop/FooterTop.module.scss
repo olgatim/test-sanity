@@ -1,0 +1,25 @@
+@import "@styles/_var";
+
+.wrap {
+  border-top: 1px solid $color-white;
+  border-bottom: 1px solid $color-white;
+}
+
+.container {
+  padding: 0 65px;
+  display: flex;
+}
+
+.infoBlock {
+  width: 58%;
+  border-right: 1px solid $color-white;
+  padding-top: 60px;
+  padding-bottom: 54px;
+}
+
+.contacts {
+  padding-top: 60px;
+  width: 42%;
+  padding-left: 62px;
+  padding-bottom: 54px;
+}

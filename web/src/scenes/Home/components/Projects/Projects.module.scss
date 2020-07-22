@@ -1,0 +1,51 @@
+.wrap {
+  position: relative;
+  padding: 0 32px 248px;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1095px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: -218px;
+}
+
+.card {
+  margin-bottom: 218px;
+  &:nth-child(even) {
+    margin-left: 72px;
+  }
+
+  &:nth-child(1) {
+    margin-left: auto;
+    margin-top: 80px;
+  }
+
+  &:nth-child(4) {
+    margin-top: -80px;
+  }
+}
+
+.linkWrap {
+  margin-top: 114px;
+  display: flex;
+  justify-content: center;
+}
+
+.note {
+  position: absolute;
+  top: 44.3%;
+  left: -80px;
+}
+
+.decor {
+  position: absolute;
+  top: -1.8%;
+  left: 9.3%;
+  z-index: -1;
+}

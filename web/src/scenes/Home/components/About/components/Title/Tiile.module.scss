@@ -1,0 +1,22 @@
+@import "@styles/_var";
+
+.wrap {
+  font-family: $font-primary;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 100%;
+  color: $color-white;
+  letter-spacing: 0.002em;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.decor {
+  transform: translateY(-0.5em);
+  margin-left: 46px;
+
+  svg {
+    display: block;
+  }
+}

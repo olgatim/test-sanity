@@ -1,0 +1,73 @@
+@import "@styles/_var";
+
+.wrap {
+  position: relative;
+  padding: 85px 32px 298px;
+  z-index: 1;
+}
+
+.highlighted {
+  color: $color-green;
+}
+
+.description {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  max-width: 250px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: $font-primary;
+  font-size: 120px;
+  line-height: 100%;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  padding-left: 64px;
+  margin-bottom: 80px;
+}
+
+.titleShift {
+  padding-left: 86px;
+}
+
+.note {
+  position: relative;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: $font-secondary;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba($color-white, 0.5);
+  max-width: 156px;
+  padding-left: 32px;
+  margin-left: auto;
+  margin-right: 198px;
+}
+
+.noteIcon {
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+
+  svg {
+    display: block;
+  }
+}
+
+.stroke {
+  position: absolute;
+  right: 85px;
+  top: 92px;
+  z-index: -1;
+}
+
+.magic {
+  position: absolute;
+  right: 94px;
+  top: 16px;
+  z-index: -1;
+}

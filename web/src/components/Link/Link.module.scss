@@ -1,0 +1,49 @@
+@import "@styles/_var";
+
+.link {
+  position: relative;
+  min-width: 240px;
+  height: 56px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  font-family: $font-primary;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-white;
+  z-index: 1;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(166.87deg, #24ec8c -5.73%, #00a3ff 131.42%),
+      #24ec8c;
+    z-index: -1;
+    transform: scaleY(0.05);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    &:before {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.icon {
+  margin-left: auto;
+
+  svg {
+    display: block;
+  }
+}

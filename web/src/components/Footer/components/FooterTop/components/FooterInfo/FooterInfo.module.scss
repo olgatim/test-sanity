@@ -1,0 +1,24 @@
+@import "@styles/_var";
+
+.wrap {
+  margin-right: 80px;
+  max-width: 590px;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 150%;
+  color: rgba($color-white, 0.95);
+  opacity: 0.5;
+}
+
+.title {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 100%;
+  color: $color-white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}

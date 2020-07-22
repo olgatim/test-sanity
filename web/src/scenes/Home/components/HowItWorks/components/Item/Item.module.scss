@@ -1,0 +1,40 @@
+@import "@styles/_var";
+
+.wrap {
+  padding-top: 30px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.002em;
+  opacity: 0.35;
+  margin-bottom: 10px;
+  padding: 0 32px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 128px;
+  padding-right: 32px;
+}
+
+.title {
+  font-family: $font-primary;
+  font-weight: 450;
+  font-size: 36px;
+  line-height: 130%;
+  letter-spacing: 0.005em;
+}
+
+.description {
+  width: 420px;
+}
