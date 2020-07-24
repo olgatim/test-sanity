@@ -1,18 +1,26 @@
 @import "@styles/_var";
 
 .wrap {
-  width: 96px;
+  width: 56px;
   height: 100%;
   border-left: 1px solid $color-white;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 992px) {
+    width: 96px;
+  }
 }
 
 .container {
-  font-size: 18px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: "Mark", sans-serif;
   font-weight: 800;
   letter-spacing: 0.05em;
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+  }
 }

@@ -1,0 +1,17 @@
+.wrap {
+  width: 100%;
+
+  :global {
+    .swiper-wrapper {
+      display: flex;
+    }
+  }
+}
+
+.slide {
+  width: auto;
+
+  &:nth-child(even) {
+    margin-top: 32px;
+  }
+}

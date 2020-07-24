@@ -9,7 +9,8 @@ const Highlighted = ({ children }) => {
 const Title = () => {
   return (
     <div className={s.wrap}>
-      Idea and <span className={s.shiftedText}>a bit of</span>{" "}
+      Idea and <br />
+      <span className={s.shiftedText}>a bit of</span> <br />
       <Highlighted>wizardry</Highlighted>
     </div>
   )

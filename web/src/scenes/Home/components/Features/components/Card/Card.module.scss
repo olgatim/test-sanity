@@ -2,16 +2,29 @@
 
 .wrap {
   position: relative;
-  width: 208px;
-  height: 288px;
+  width: 136px;
+  height: 200px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 576px) {
+    width: 146px;
+  }
+
+  @media (min-width: 992px) {
+    width: 208px;
+    height: 288px;
+  }
 }
 
 .content {
-  padding: 0 16px 24px 24px;
+  padding: 0 16px 16px;
   margin-top: auto;
+
+  @media (min-width: 992px) {
+    padding: 0 16px 24px 24px;
+  }
 }
 
 .green {
@@ -35,38 +48,58 @@
 .title {
   font-family: $font-primary;
   font-weight: 800;
-  font-size: 108px;
+  font-size: 75px;
   line-height: 100%;
   letter-spacing: 0.002em;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
-  transform: translateX(100px);
+  transform: translateX(62px);
+  margin-top: 4px;
+
+  @media (min-width: 992px) {
+    font-size: 108px;
+    transform: translateX(100px);
+    margin-top: 0;
+  }
 }
 
 .subtitle {
-  margin-top: 28px;
+  margin-top: 4px;
   font-family: $font-primary;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  // color: $color-dark-black;
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+    margin-top: 28px;
+  }
 }
 
 .description {
   font-family: $font-secondary;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 130%;
   letter-spacing: 0.05em;
-  // color: $color-dark-black;
-  margin-top: 34px;
+  margin-top: 16px;
   margin-bottom: 0;
+
+  @media (min-width: 992px) {
+    font-size: 16px;
+    margin-top: 34px;
+  }
 }
 
 .pixel {
-  width: 5px;
-  height: 5px;
+  width: 3px;
+  height: 3px;
   background: currentColor;
+
+  @media (min-width: 992px) {
+    width: 5px;
+    height: 5px;
+  }
 }

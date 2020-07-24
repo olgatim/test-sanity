@@ -2,25 +2,42 @@
 
 .wrap {
   position: relative;
-  padding-bottom: 208px;
+  padding-bottom: 130px;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    padding-bottom: 208px;
+  }
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 32px;
+  padding: 0 16px;
+
+  @media (min-width: 992px) {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .note {
   max-width: 252px;
-  margin-right: 165px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+
+  @media (min-width: 992px) {
+    margin-right: 165px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
 }
 
 .itemsWrap {
-  margin-top: 84px;
+  margin-top: 32px;
+
+  @media (min-width: 768px) {
+    margin-top: 84px;
+  }
 }
 
 .item {
@@ -33,7 +50,20 @@
 
 .decor {
   position: absolute;
-  top: -134px;
-  left: 112px;
   z-index: -1;
+  width: 100%;
+  top: -54px;
+  left: 45px;
+
+  @media (min-width: 992px) {
+    top: -134px;
+    left: 112px;
+    width: unset;
+  }
+
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }

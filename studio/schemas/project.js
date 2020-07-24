@@ -24,5 +24,10 @@ export default {
       title: "Year",
       type: "string",
     },
+    {
+      name: "link",
+      title: "Link",
+      type: "string",
+    },
   ],
 };

@@ -1,0 +1,14 @@
+.logo {
+  @media (min-width: 992px) {
+    width: 198px;
+  }
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+
+  svg {
+    display: block;
+  }
+}

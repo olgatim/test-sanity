@@ -1,15 +1,21 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
+import useResizeWidth from "@hooks/useResizeWidth"
 import { useStaticQuery, graphql } from "gatsby"
 import Title, { Highlighted } from "./components/Title"
 import useGetImages from "./useGetImages"
 import Card from "./components/Card"
 import Link from "@components/Link"
 import Note from "@components/Note"
+import Slider from "./components/Slider"
 
 import s from "./Projects.module.scss"
 
+const mobileScreenWidth = 992
+
 const Projects = () => {
+  const { width } = useResizeWidth()
+
   const {
     data: { edges },
   } = useStaticQuery(graphql`
@@ -32,6 +38,7 @@ const Projects = () => {
             }
             tags
             year
+            link
             _createdAt(fromNow: false)
           }
         }
@@ -48,19 +55,22 @@ const Projects = () => {
           <Highlighted>projects</Highlighted>
         </Title>
       </div>
+      <div className={s.note}>
+        <Note>
+          It will make you <br />
+          WOW!
+        </Note>
+      </div>
       <div className={s.box}>
-        {edges.map(({ node }) => (
-          <div className={s.card} key={node._id}>
-            <Card data={node} />
-          </div>
-        ))}
-
-        <div className={s.note}>
-          <Note>
-            It will make you <br />
-            WOW!
-          </Note>
-        </div>
+        {width < mobileScreenWidth ? (
+          <Slider projects={edges} />
+        ) : (
+          edges.map(({ node }) => (
+            <div className={s.card} key={node._id}>
+              <Card data={node} />
+            </div>
+          ))
+        )}
       </div>
       <div className={s.linkWrap}>
         <Link link="/">All Projects</Link>

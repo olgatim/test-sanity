@@ -2,22 +2,30 @@
 
 .wrap {
   position: relative;
-  width: 44px;
-  height: 14px;
-  // top: 22px;
-  // left: 20px;
+  width: 24px;
+  height: 9px;
   transition: 0.5s ease-in-out;
-  // z-index: 30;
   cursor: pointer;
+
+  @media (min-width: 992px) {
+    width: 44px;
+    height: 14px;
+  }
 
   span {
     display: block;
     position: absolute;
     opacity: 1;
-    width: 32px;
-    height: 3px;
+    width: 17px;
+    height: 2px;
     background-color: $color-green;
     transition: all 0.3s ease-in-out;
+
+    @media (min-width: 992px) {
+      width: 32px;
+      height: 3px;
+    }
+
     &:nth-child(1) {
       top: 0px;
       left: 0;

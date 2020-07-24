@@ -2,24 +2,34 @@
 
 .wrap {
   position: relative;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 130%;
   font-family: $font-secondary;
   font-weight: 400;
   letter-spacing: 0.05em;
   color: rgba($color-white, 0.5);
-  // max-width: 156px;
-  padding-left: 32px;
+  padding-left: 22px;
   margin-left: auto;
-  // margin-right: 198px;
+
+  @media (min-width: 992px) {
+    font-size: 16px;
+    padding-left: 32px;
+  }
 }
 
 .noteIcon {
   position: absolute;
-  top: 0.1em;
+  top: 0;
   left: 0;
+  width: 12px;
+
+  @media (min-width: 992px) {
+    width: 16px;
+  }
 
   svg {
     display: block;
+    width: 100%;
+    height: auto;
   }
 }

@@ -7,6 +7,24 @@
 
 .link {
   + .link {
-    margin-left: 27px;
+    margin-left: 16px;
+
+    @media (min-width: 992px) {
+      margin-left: 27px;
+    }
+  }
+}
+
+.socialIcon {
+  width: 24px;
+
+  @media (min-width: 992px) {
+    width: 40px;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

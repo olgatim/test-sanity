@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/static/fonts/`,
+      },
+    },
     `gatsby-plugin-robots-txt`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

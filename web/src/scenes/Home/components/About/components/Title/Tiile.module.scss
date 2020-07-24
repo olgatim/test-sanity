@@ -3,20 +3,45 @@
 .wrap {
   font-family: $font-primary;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 28px;
   line-height: 100%;
   color: $color-white;
   letter-spacing: 0.002em;
   display: flex;
   align-items: center;
   padding-top: 40px;
+
+  @media (min-width: 576px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 80px;
+  }
 }
 
 .decor {
   transform: translateY(-0.5em);
-  margin-left: 46px;
+  margin-left: 14px;
+  width: 32px;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    margin-left: 28px;
+  }
+
+  @media (min-width: 992px) {
+    width: 99px;
+    margin-left: 46px;
+  }
 
   svg {
     display: block;
+    width: 100%;
+    height: auto;
   }
 }

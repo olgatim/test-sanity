@@ -4,9 +4,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 280px;
-  padding-top: 70px;
+  padding: 70px 16px 126px;
   z-index: 1;
+
+  @media (min-width: 992px) {
+    padding: 20px 16px 280px;
+  }
 }
 
 .container {
@@ -15,73 +18,138 @@
 }
 
 .title {
-  padding-bottom: 80px;
+  padding-bottom: 26px;
   border-bottom: 1px solid $color-white;
+
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+  }
 }
 
 .description {
   font-family: $font-primary;
-  font-weight: 450;
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 130%;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.05em;
   color: $color-white;
-  margin-top: 64px;
+  margin-top: 27px;
   max-width: 640px;
+
+  @media (min-width: 576px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 36px;
+    margin-top: 64px;
+    font-weight: 450;
+    letter-spacing: 0.005em;
+  }
 }
 
 .block {
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 34px;
+
+  @media (min-width: 992px) {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .imageWrap {
   position: relative;
   z-index: 1;
-  max-width: 640px;
+  padding-left: 10px;
+  margin-bottom: 38px;
+
+  @media (min-width: 992px) {
+    max-width: 640px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 
   &:before {
     content: "";
     display: block;
     position: absolute;
-    bottom: -19px;
-    left: -25px;
-    width: 100%;
+    bottom: -12px;
+    left: 0px;
+    width: calc(100% - 17px);
     height: 100%;
     border: 1px solid $color-white;
     opacity: 0.2;
     z-index: -1;
+
+    @media (min-width: 992px) {
+      bottom: -19px;
+      left: -25px;
+    }
   }
 }
 
 .aboutImage {
   display: block;
+  width: 100%;
+  max-width: none;
+
+  @media (min-width: 992px) {
+    max-width: 100%;
+  }
 }
 
 .text {
   font-family: $font-secondary;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 160%;
-  letter-spacing: 0.005em;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.0005em;
   color: $color-white;
+
+  @media (min-width: 576px) {
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+  }
 }
 
 .content {
-  max-width: 280px;
-  margin-left: 32px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 992px) {
+    max-width: 280px;
+    margin-left: 32px;
+  }
 }
 
 .buttonWrap {
-  margin-top: auto;
+  margin-top: 23px;
+
+  @media (min-width: 992px) {
+    margin-top: auto;
+  }
 }
 
 .decor {
   position: absolute;
-  top: 190px;
-  right: 250px;
+  width: 40%;
+  top: 120px;
+  left: 190px;
   z-index: -1;
+
+  @media (min-width: 992px) {
+    top: 150px;
+    right: 250px;
+    left: auto;
+    width: unset;
+  }
+
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }

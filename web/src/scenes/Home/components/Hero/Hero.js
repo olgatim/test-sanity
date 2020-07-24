@@ -1,11 +1,12 @@
 import React from "react"
 import { ReactSVG } from "react-svg"
 import useGetImages from "./useGetImages"
+import Note from "@components/Note"
 
 import s from "./Hero.module.scss"
 
 const Hero = () => {
-  const { noteStar, stroke, magic } = useGetImages()
+  const { stroke, magic } = useGetImages()
 
   return (
     <div className={s.wrap}>
@@ -15,12 +16,12 @@ const Hero = () => {
           studio based in Mexico.
         </div>
         <h1 className={s.title}>
-          <span className={s.highlighted}>Idea</span> driven{" "}
+          <span className={s.highlighted}>Idea</span> driven
+          <br />
           <span className={s.titleShift}>development</span>
         </h1>
         <div className={s.note}>
-          With a little bit of wizardy!
-          <ReactSVG src={noteStar.publicURL} className={s.noteIcon} />
+          <Note> With a little bit of wizardy!</Note>
         </div>
       </div>
       <ReactSVG src={stroke.publicURL} className={s.stroke} />

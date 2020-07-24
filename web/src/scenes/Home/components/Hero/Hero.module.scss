@@ -2,8 +2,12 @@
 
 .wrap {
   position: relative;
-  padding: 85px 32px 298px;
+  padding: 64px 16px 148px;
   z-index: 1;
+
+  @media (min-width: 992px) {
+    padding: 85px 32px 298px;
+  }
 }
 
 .highlighted {
@@ -13,61 +17,118 @@
 .description {
   font-family: $font-secondary;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
+  font-size: 12px;
+  line-height: 120%;
   letter-spacing: 0.005em;
-  max-width: 250px;
-  margin-bottom: 50px;
+  max-width: 120px;
+  margin-bottom: 175px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+    line-height: 150%;
+    max-width: 250px;
+  }
 }
 
 .title {
   font-family: $font-primary;
-  font-size: 120px;
+  font-size: 40px;
   line-height: 100%;
   font-weight: 800;
   letter-spacing: 0.01em;
-  padding-left: 64px;
-  margin-bottom: 80px;
+  margin-bottom: 46px;
+
+  @media (min-width: 576px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 80px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 120px;
+    padding-left: 64px;
+    margin-bottom: 80px;
+  }
 }
 
 .titleShift {
-  padding-left: 86px;
+  padding-left: 28px;
+
+  @media (min-width: 992px) {
+    padding-left: 86px;
+  }
 }
 
 .note {
-  position: relative;
-  font-size: 16px;
-  line-height: 130%;
-  font-family: $font-secondary;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  color: rgba($color-white, 0.5);
-  max-width: 156px;
-  padding-left: 32px;
-  margin-left: auto;
-  margin-right: 198px;
+  max-width: 120px;
+  margin-left: 30px;
+
+  @media (min-width: 992px) {
+    margin-left: auto;
+    margin-right: 198px;
+    max-width: 156px;
+  }
 }
 
 .noteIcon {
   position: absolute;
   top: 0.1em;
   left: 0;
+  width: 12px;
+
+  @media (min-width: 992px) {
+    width: 16px;
+  }
 
   svg {
     display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
 .stroke {
   position: absolute;
-  right: 85px;
-  top: 92px;
   z-index: -1;
+
+  right: 6px;
+  top: 138px;
+  width: 160%;
+
+  @media (min-width: 768px) {
+    right: 85px;
+    top: 92px;
+    width: unset;
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .magic {
   position: absolute;
-  right: 94px;
-  top: 16px;
+  width: 60%;
+  right: 10px;
+  top: 100px;
   z-index: -1;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    right: 94px;
+    top: 16px;
+    width: unset;
+  }
 }

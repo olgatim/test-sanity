@@ -2,20 +2,27 @@
 
 .link {
   position: relative;
-  min-width: 240px;
-  height: 56px;
-  display: flex;
-  padding: 0 20px;
+  min-width: 180px;
+  height: 36px;
+  display: inline-flex;
+  padding: 0 14px;
   align-items: center;
   font-family: $font-primary;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: $color-white;
   z-index: 1;
   cursor: pointer;
+
+  @media (min-width: 576px) {
+    height: 56px;
+    font-size: 18px;
+    min-width: 240px;
+    padding: 0 20px;
+  }
 
   &:before {
     content: "";

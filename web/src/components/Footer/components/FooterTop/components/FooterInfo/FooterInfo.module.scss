@@ -1,24 +1,43 @@
 @import "@styles/_var";
 
 .wrap {
-  margin-right: 80px;
-  max-width: 590px;
+  @media (min-width: 768px) {
+    margin-right: 80px;
+    max-width: 590px;
+  }
 }
 
 .description {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 150%;
   color: rgba($color-white, 0.95);
   opacity: 0.5;
+
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
 }
 
 .title {
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 100%;
   color: $color-white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
+
+  @media (min-width: 576px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
 }
